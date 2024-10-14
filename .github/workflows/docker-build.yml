@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - shell: bash
+        env:
+          DOCKER_PASSWORD: ${{ secrets.secrets.SuperSecret }}
+
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -29,6 +33,6 @@ jobs:
       - name: Push Docker image
         if: github.ref == 'refs/heads/main'
         run: |
-          echo "${{DOCKER_PASSWORD}}" | docker login -u "bohanh" --password-stdin
+          echo "$env:DOCKER_PASSWORD" | docker login -u "bohanh" --password-stdin
           docker tag asso bohanh/asso:latest
           docker push bohanh/asso:latest
