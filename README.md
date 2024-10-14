@@ -7,8 +7,7 @@ Ils effectuent ensuite une comparaison entre (x + y) + z et x + (y + z). Les ré
 
 `xx.xx% accuracy for language`
 
-
-
+## Lancement en local
 Pour lancer chaque langage dans le terminal : 
 
 ### Java
@@ -25,4 +24,11 @@ node javascript.js
 ### python
 ```aiignore
 python python.py
+```
+
+## Lancement avec Docker
+
+```aiignore
+docker build -t asso
+docker run --rm asso
 ```
