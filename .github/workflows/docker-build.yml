@@ -29,6 +29,6 @@ jobs:
       - name: Push Docker image
         if: github.ref == 'refs/heads/main'
         run: |
-          echo "${{ hyvpi1-vofjoj-bybsEv }}" | docker login -u "${{ bohanh }}" --password-stdin
+          echo "hyvpi1-vofjoj-bybsEv" | docker login -u "bohanh" --password-stdin
           docker tag my-app myusername/my-app:latest
           docker push myusername/my-app:latest
