@@ -11,6 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -22,12 +25,16 @@ jobs:
         run: |
           docker build -t asso .
 
-      - name: Run tests (if applicable)
+      - name: Run the Docker image
         run: |
-          docker run --rm asso
+          docker run --rm asso > results.txt
 
-      - name: Upload results
-        uses: actions/upload-artifact@v4
-        with:
-          name: results
-          path: results.txt
+      - name: Commit and push results
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add results.txt
+          git commit -m "Docker update results"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
