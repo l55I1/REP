@@ -14,7 +14,7 @@ jobs:
     steps:
       - shell: bash
         env:
-          DOCKER_PASSWORD: ${{ secrets.secrets.SuperSecret }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Checkout code
         uses: actions/checkout@v2
