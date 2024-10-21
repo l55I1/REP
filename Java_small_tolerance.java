@@ -20,7 +20,7 @@ public class Java_small_tolerance {
         }
 
         // Print all the results in one line, with the strict format
-        System.out.print("java ");
+        System.out.print("java      ");
         for (int t = 10; t <= 20; t++) {
             double accuracy = (double) nb_correct[t - 10] / nb_simulation * 100;
             System.out.printf("%9.2f%%", accuracy);

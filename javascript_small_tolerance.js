@@ -13,7 +13,6 @@ for (let t = 10; t < 21; t++) {
         }
     }
     results.push((nb_correct / nb_simulation * 100).toFixed(2));
-    console.log(t, results.at(results.length - 1));
 }
 
 console.log("javascript", results.map((result) => {
