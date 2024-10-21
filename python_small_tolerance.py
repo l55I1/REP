@@ -1,7 +1,7 @@
 import math
 import random
 
-nb_simulation = int(math.pow(10, 2))
+nb_simulation = int(math.pow(10, 6))
 print("python    ", end="")
 
 for t in range(10, 21):
