@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - random_0_to_10
   pull_request:
     branches:
-      - main
+      - random_0_to_10
 
 jobs:
   build:
