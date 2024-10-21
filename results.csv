@@ -1,0 +1,9 @@
+experiments;op_creation;op_compare;result
+random_equal;random.random();result1 == result2;82.82%
+random_tolerance;random.random();result1 - result2 < 1e-16;91.41%
+uniform_equal;random.uniform(0, 1);result1 == result2;82.81%
+uniform_tolerance;random.uniform(0, 1);result1 - result2 < 1e-16;91.36%
+uniform10_equal;random.uniform(0, 10);result1 == result2;77.32%
+uniform10_tolerance;random.uniform(0, 10);result1 - result2 < 1e-16;88.64%
+numpy_equal;np.random.rand();result1 == result2;82.79%
+numpy_tolerance;np.random.rand();result1 - result2 < 1e-16;91.43%
