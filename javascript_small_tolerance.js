@@ -15,7 +15,7 @@ for (let t = 10; t < 21; t++) {
     results.push((nb_correct / nb_simulation * 100).toFixed(2));
 }
 
-console.log("javascript", results.map((result) => {
+console.log("javascript" + results.map((result) => {
     let res = result + "%";
     return " ".repeat(10 - res.length) + res;
 }).join(""));
