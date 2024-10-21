@@ -43,4 +43,5 @@ Dans ces branches, nous avons expérimenté avec différentes tolerances et plag
 
 Branche all_factors :
 Cette branche utilise Jinja2 pour explorer tous les facteurs impliqués dans notre projet.
+Nous avons comparé différents facteurs comme suit : plage aléatoire générée, tolérance, et différentes bibliothèques de nombres aléatoires.
 Les résultats de l'exploration des facteurs sont stockés dans le fichier results.csv, situé dans la branche all_factors.
