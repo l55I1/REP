@@ -13,8 +13,12 @@ WORKDIR /app
 COPY python.py .
 COPY javascript.js .
 COPY Java.java .
+COPY python.py .
+COPY javascript.js .
+COPY Java.java .
 
 # Compile Java file
+RUN javac Java.java
 RUN javac Java.java
 
 # Command to run Python script, Node.js script, and Java class
