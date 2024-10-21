@@ -10,12 +10,14 @@ RUN apt-get install -y openjdk-17-jdk
 WORKDIR /app
 
 # Copy Python, JavaScript, and Java source files
-COPY python.py .
-COPY javascript.js .
-COPY Java.java .
+COPY python_small_tolerance.py .
+COPY javascript_small_tolerance.js .
+COPY Java_small_tolerance.java .
 
 # Compile Java file
-RUN javac Java.java
+RUN javac Java_small_tolerance.java
 
 # Command to run Python script, Node.js script, and Java class
-CMD ["sh", "-c", "python python.py && node javascript.js && java Java"]
+CMD ["sh", "-c", "echo \"tolerance \" && for i in {10..20}; do echo \"     1e-$i\"; done && python python_small_tolerance.py && node javascript_small_tolerance.js && java Java_small_tolerance"]
+
+
