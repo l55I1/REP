@@ -1,0 +1,24 @@
+import random
+import math
+import numpy as np
+
+
+def check_property(repetitions):
+    correct_count = 0
+    for _ in range(repetitions):
+        x = {{ op_creation }}
+        y = {{ op_creation }}
+        z = {{ op_creation }}
+
+        # Check if the associative property holds
+        result1 = ((x + y) + z)
+        result2 = (x + (y + z))
+
+        if {{ op_compare }}:
+            correct_count += 1
+
+    print(f"{correct_count / repetitions * 100:.2f}%")
+
+
+# Define the number of repetitions
+check_property(int(math.pow(10, 6)))

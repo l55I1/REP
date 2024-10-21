@@ -3,10 +3,10 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - all_factors
   pull_request:
     branches:
-      - main
+      - all_factors
 
 jobs:
   build:
@@ -27,7 +27,7 @@ jobs:
 
       - name: Run the Docker image
         run: |
-          docker run --rm asso > results.txt
+          docker run --rm asso > results.csv
 
       - name: Commit and push results
         run: |
