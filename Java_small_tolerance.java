@@ -1,4 +1,4 @@
-public class java_small_tolerance {
+public class Java_small_tolerance {
     public static void main(String[] args) {
 
         int nb_simulation = (int) Math.pow(10, 6);
@@ -23,7 +23,7 @@ public class java_small_tolerance {
         System.out.print("java ");
         for (int t = 10; t <= 20; t++) {
             double accuracy = (double) nb_correct[t - 10] / nb_simulation * 100;
-            System.out.printf("%10.4f", accuracy);  // Print each result in 10 spaces, with 4 digits for accuracy
+            System.out.printf("%9.2f%%", accuracy);
         }
         System.out.println();  // Move to the next line after printing all results
     }
