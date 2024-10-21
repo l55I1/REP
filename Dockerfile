@@ -18,4 +18,4 @@ COPY Java_small_tolerance.java .
 RUN javac Java_small_tolerance.java
 
 # Command to run Python script, Node.js script, and Java class
-CMD ["sh", "-c", "echo \"tolerance \" && for i in {10..20}; do echo -n \"     1e-\$i\"; done; echo && python python_small_tolerance.py && node javascript_small_tolerance.js && java Java_small_tolerance"]
+CMD ["sh", "-c", "echo \"tolerance      1e-10     1e-11     1e-12     1e-13     1e-14     1e-15     1e-16     1e-17     1e-18     1e-19     1e-20\" && python python_small_tolerance.py && node javascript_small_tolerance.js && java Java_small_tolerance"]
