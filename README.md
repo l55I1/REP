@@ -35,3 +35,12 @@ docker run --rm asso
 ```
 
 ## TP2
+Structure du Projet
+Ce projet est structuré en 4 branches, chacune ayant des objectifs spécifiques :
+
+2 Branches de Test des Tolerances et Plages Aléatoires :
+Dans ces branches, nous avons expérimenté avec différentes tolerances et plages aléatoires pour tester divers facteurs.
+
+Branche all_factors :
+Cette branche utilise Jinja2 pour explorer tous les facteurs impliqués dans notre projet.
+Les résultats de l'exploration des facteurs sont stockés dans le fichier results.csv, situé dans la branche all_factors.
