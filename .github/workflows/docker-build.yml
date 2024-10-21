@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: Explore all factors
 
 on:
   push:
