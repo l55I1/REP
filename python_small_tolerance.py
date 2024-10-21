@@ -16,3 +16,4 @@ for t in range(10, 21):
             nb_correct += 1
 
     print(f"{(nb_correct / nb_simulation * 100):.2f}%".rjust(10), end="")
+print()
