@@ -18,7 +18,7 @@ java Java
 
 ### JavaScript
 ```aiignore
-node javascript.js
+node javascript_0_to_10.js
 ```
 
 ### python
