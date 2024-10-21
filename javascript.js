@@ -8,4 +8,4 @@ for (let _ = 0; _ < nb_simulation; _++) {
         nb_correct += 1;
     }
 }
-console.log((nb_correct / nb_simulation * 100).toFixed(2), "% accuracy for javascript");
+console.log((nb_correct / nb_simulation * 100).toFixed(2) + "% accuracy for javascript");
