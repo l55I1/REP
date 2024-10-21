@@ -14,9 +14,9 @@ COPY python.py .
 COPY javascript.js .
 COPY Java.java .
 
-COPY python.py .
-COPY javascript.js .
-COPY Java.java .
+COPY python_0_to_10.py .
+COPY javascript_0_to_10.js .
+COPY Java_0_to_10.java .
 
 # Compile Java file
 RUN javac Java.java
