@@ -5,9 +5,9 @@ public class Java {
         int nb_correct = 0;
 
         for (int i = 1;i < nb_simulation;i++) {
-            double x = Math.random()*10;
-            double y = Math.random()*10;
-            double z = Math.random()*10;
+            double x = Math.random();
+            double y = Math.random();
+            double z = Math.random();
             if ((x + y) + z == x + (y + z)) {
                 nb_correct++;
             }
