@@ -1,9 +1,21 @@
 experiments;op_creation;op_compare;result
-random_equal;random.random();result1 == result2;82.82%
-random_tolerance;random.random();result1 - result2 < 1e-16;91.41%
-uniform_equal;random.uniform(0, 1);result1 == result2;82.81%
-uniform_tolerance;random.uniform(0, 1);result1 - result2 < 1e-16;91.36%
-uniform10_equal;random.uniform(0, 10);result1 == result2;77.32%
-uniform10_tolerance;random.uniform(0, 10);result1 - result2 < 1e-16;88.64%
-numpy_equal;np.random.rand();result1 == result2;82.79%
-numpy_tolerance;np.random.rand();result1 - result2 < 1e-16;91.43%
+random_tolerance15;random.random();result1 - result2 < 1e-15;100.00%
+random_tolerance16;random.random();result1 - result2 < 1e-16;91.41%
+random_tolerance18;random.random();result1 - result2 < 1e-18;91.46%
+random_equal;random.random();result1 == result2;82.81%
+uniform_tolerance15;random.uniform(0, 1);result1 - result2 < 1e-15;100.00%
+uniform_tolerance16;random.uniform(0, 1);result1 - result2 < 1e-16;91.40%
+uniform_tolerance18;random.uniform(0, 1);result1 - result2 < 1e-18;91.45%
+uniform_equal;random.uniform(0, 1);result1 == result2;82.77%
+uniform10_tolerance15;random.uniform(0, 10);result1 - result2 < 1e-15;89.55%
+uniform10_tolerance16;random.uniform(0, 10);result1 - result2 < 1e-16;88.67%
+uniform10_tolerance18;random.uniform(0, 10);result1 - result2 < 1e-18;88.62%
+uniform10_equal;random.uniform(0, 10);result1 == result2;77.34%
+uniform100_tolerance15;random.uniform(0, 100);result1 - result2 < 1e-15;87.46%
+uniform100_tolerance16;random.uniform(0, 100);result1 - result2 < 1e-16;87.48%
+uniform100_tolerance18;random.uniform(0, 100);result1 - result2 < 1e-18;87.49%
+uniform100_equal;random.uniform(0, 100);result1 == result2;75.05%
+numpy_tolerance15;np.random.rand();result1 - result2 < 1e-15;100.00%
+numpy_tolerance16;np.random.rand();result1 - result2 < 1e-16;91.38%
+numpy_tolerance18;np.random.rand();result1 - result2 < 1e-18;91.44%
+numpy_equal;np.random.rand();result1 == result2;82.87%
