@@ -5,9 +5,9 @@ nb_simulation = int(math.pow(10, 6))
 nb_correct = 0
 
 for i in range(nb_simulation):
-    x = random.random()
-    y = random.random()
-    z = random.random()
+    x = random.uniform(0, 10)
+    y = random.uniform(0, 10)
+    z = random.uniform(0, 10)
     if (x + y) + z == x + (y + z):
         nb_correct += 1
 
