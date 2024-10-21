@@ -8,11 +8,14 @@ factors = {
         "random": "random.random()",
         "uniform": "random.uniform(0, 1)",
         "uniform10": "random.uniform(0, 10)",
+        "uniform100": "random.uniform(0, 100)",
         "numpy": "np.random.rand()"
     },
     'op_compare': {
+        "tolerance15": "result1 - result2 < 1e-15",
+        "tolerance16": "result1 - result2 < 1e-16",
+        "tolerance18": "result1 - result2 < 1e-18",
         "equal": "result1 == result2",
-        "tolerance": "result1 - result2 < 1e-16"
     }
 }
 
