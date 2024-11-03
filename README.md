@@ -34,7 +34,7 @@ docker build -t asso
 docker run --rm asso
 ```
 
-## TP2
+## TP3
 ### Structure du Projet
 
 Ce projet est structuré en 4 branches, chacune ayant des objectifs spécifiques :
@@ -46,3 +46,4 @@ Dans ces branches, nous avons expérimenté avec différentes tolerances et plag
 Cette branche utilise Jinja2 pour explorer tous les facteurs impliqués dans notre projet.
 Nous avons comparé différents facteurs comme suit : plage aléatoire générée, tolérance, et différentes bibliothèques de nombres aléatoires.
 Les résultats de l'exploration des facteurs sont stockés dans le fichier results.csv, situé dans la branche all_factors.
+Le rapport pour ce tp peut être trouvé également dans cette branche, dans le fichier report.ipynb.
